@@ -9,7 +9,7 @@ on:
   push:
     branches:
       - "main"
-      - "feature*"
+      - "**"
 jobs:
   run-lint:
     runs-on: ubuntu-latest
