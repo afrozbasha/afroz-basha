@@ -6,8 +6,10 @@
 name: Lint Code Base
 
 on:
-  label:
-    types: [created, edited]
+  push:
+    branches:
+      - "main"
+      - "feature*"
 jobs:
   run-lint:
     runs-on: ubuntu-latest
